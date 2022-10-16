@@ -6,25 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Minutes</title>
     <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Figtree&family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="outline">OUTLINE</div>
+    <header id="header">
         <nav>
-            <ol>
-                <li><a href="#last-meeting">Unfinished from Last Meeting</a></li>
-                <li><a href="#this-meeting">New Content for This Meeting</a></li>
-                <li><a href="#next-meeting">Plan for Next Meeting</a></li>
-                <li><a href="#miscellaneous">Miscellaneous</a></li>
-                <li><a href="#recordings">Meeting Recordings</a></li>
-                <li><a href="#attendance-list">Attendance List</a></li>
-                <li><a href="#feedback-form">Feedback Form</a></li>
-            </ol>
+            <a id="index" href="#header"">Fairy Notes</a>
+            <div class="indices">
+                <a href="#last-meeting">Last Meeting</a>
+                <a href="#this-meeting">This Meeting</a>
+                <a href="#next-meeting">Next Meeting</a>
+                <a href="#miscellaneous">Miscellaneous</a>
+                <a href="#recordings">Recordings</a>
+                <a href="#attendance-list">Attendance</a>
+                <a href="#feedback-form">Feedback</a>
+            </div>
         </nav>
     </header>
     <main>
-        <h1>Spring Rainbow Strategy Meeting</h1>
-        <h3>Oct 5, 2022</h3>
+        <div class="title" style="background-image: url(resources/fairytopia-transparent.png);">
+            <h1>Spring Rainbow Strategy Meeting</h1>
+            <h2>Oct 5, 2022</h2>
+        </div>
         <section id="last-meeting">
             <h2>Unfinished from Last Meeting</h2>
             <ol>
@@ -33,9 +39,9 @@
             </ol>
             <h3>Notes:</h3>
             <p>Azura's final candicdate will be Elina.</p>
-            <img src="resources/azura-and-elina.png" alt="Azura chose Elina" width="500">
+            <img src="resources/azura-and-elina.png" alt="Azura chose Elina">
         </section>
-        <br>
+        <hr>
         <section id="this-meeting">
             <h2>New Content for This Meeting</h2>
             <ol>
@@ -51,17 +57,17 @@
                     <li>The creation of the first rainbow</li>
                 </ul>
             <p>
-                We discussed that the dorm rooms should be separate but close to each other <br>
-                since we want to ensure privacy as well as let the candidates make friends <br>
+                We discussed that the dorm rooms should be separate but close to each other
+                since we want to ensure privacy as well as let the candidates make friends
                 with each other. We made a scratch:
             </p>
-            <img src="resources/dorm-scratch.png" alt="dorm scratch" width="500"><br>
+            <img src="resources/dorm-scratch.png" alt="dorm scratch"><br>
             <p>
-                The meal plan was not discussed much in this meeting. Topaz emphasized that we <br>
+                The meal plan was not discussed much in this meeting. Topaz emphasized that we
                 <em>must include butterfly cookies</em> since she loves them.
             </p>
         </section>
-        <br>
+        <hr>
         <section id="next-meeting">
             <h2>Plan for Next Meeting</h2>
             <details>
@@ -73,7 +79,7 @@
                 <li>Finalize meal plans for the candidates</li>
             </ol>
         </section>
-        <br>
+        <hr>
         <section id="miscellaneous">
             <h2>Miscellaneous</h2>
             <h3>Comments</h3>
@@ -89,7 +95,7 @@
             <h3>Feedback</h3>
             <p>Please make sure to <strong>fill out the form at the bottom of the page</strong> by the end of this week.</p>
         </section>
-        <br>
+        <hr>
         <section id="recordings">
             <h2>Meeting Recordings</h2>
             <h3>Video Recording</h3>
@@ -101,7 +107,7 @@
                 <source src="resources/audio.ogg" type="audio/ogg">
             </audio>
         </section>
-        <br>
+        <hr>
         <section id="attendance-list">
             <h2>Attendance List</h2>
             <ul>
@@ -115,7 +121,7 @@
                 <li>Amethyst</li>
             </ul>
         </section>
-        <br>
+        <hr>
         <section id="feedback-form">
             <h2>Feedback Form</h2>
             <p>Feel free to provide your feedback!</p>
@@ -171,8 +177,8 @@
                 
                 <fieldset>
                     <legend>Comments</legend>
-                    <label for="comments">Please leave your comment about anything, e.g. notetaking/meeting content etc.</label><br><br>
-                    <textarea id="comments" name="comments" rows="10" cols="50"></textarea>
+                    <label for="comments">Please leave your comment about anything!</label><br><br>
+                    <textarea id="comments" name="comments" rows="6" cols="50"></textarea>
                 </fieldset><br>
                 
                 <button type="submit" form="feedback">Submit Feedback Form</button>
@@ -180,7 +186,6 @@
             <br><br>
         </section>
     </main>
-    <hr>
     <footer>
         <p>From the Enchantress: <i>Be happy!</i></p>
         <div class="copyright">&copy; Fairy Secretary</div>

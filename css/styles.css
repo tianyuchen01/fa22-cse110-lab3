@@ -1,0 +1,185 @@
+* {
+    color: #46434c;
+}
+
+body {
+    background-color: #FFF9F9;
+    font-family: 'Figtree', sans-serif;
+    margin: 0;
+}
+
+button {
+    border-radius: 0;
+    border-width: 0;
+    padding: 20px;
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.5s;
+    background-color: #DAEAF1;
+}
+
+button:hover {
+    background-color: #C6DCE4;
+}
+
+input, select {
+    border-radius: 0;
+    border-width: 0;
+    background-color: #F5EFE6;
+    padding: 5px;
+    font-family: 'Figtree', sans-serif;
+}
+
+fieldset {
+    max-width: 50%;
+    border-style: dotted;
+    border-width: 0.2rem;
+}
+
+legend {
+    font-weight: bold;
+}
+
+textarea {
+    background-color: #F5EFE6;
+    border-radius: 0;
+    border-width: 0;
+}
+
+nav {
+    background-color: Thistle;
+    height: 10%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+h1 {
+    color: #905E96;
+    font-family: 'Dancing Script', cursive;
+    font-size: 0.75in;
+}
+
+h2 {
+    color: #937DC2;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
+}
+
+h3 {
+    color: #905E96;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+hr {
+    width: 5%;
+    border-style: dotted;
+    border-width: 0.5rem 0 0 0;
+    border-color: #F2D7D9;
+}
+
+section {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+footer {
+    background-color: Thistle;
+    height: 4.5cm;
+    text-align: center;
+}
+
+footer > p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2vw;
+    padding-top: 30px;
+}
+
+footer > p, i, .copyright {
+    color: #FFF9F9;
+}
+
+img {
+    opacity: 0.8;
+}
+
+img[alt^="Azura"] {
+    width: 30%;
+}
+
+img[alt^="dorm"] {
+    width: 40%;
+}
+
+p, ul, ol, form {
+    line-height: 2;
+}
+
+p:active, ul:active, ol:active {
+    background: #F2D7D9;
+}
+
+.copyright {
+    font-size: small;
+}
+
+.title {
+    text-align: center;
+    padding: 250px 0 150px 0;
+}
+
+.title > h1 {
+    margin: 0 auto 0 auto;
+}
+
+.title > h2 {
+    color: rgb(144, 94, 150);
+}
+
+.indices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2vw;
+    width: 75%;
+    position: absolute;
+    right: 5%;
+    margin-top: 2%;
+}
+
+.indices > a {
+    color: hsl(293, 23%, 30%);
+    display: inline-block;
+    font-size: 1.25em;
+    text-decoration: none;
+    transition: color 0.5s;
+    margin: auto;
+}
+
+.indices > a:hover {
+    color: Seashell;
+}
+
+#index {
+    color: #FFF9F9;
+    font-size: 2.8vw;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    position: absolute;
+    left: 10px;
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 5%;
+    margin-bottom: 0;
+}
+
+#last-meeting {
+    margin-top: 0;
+}
