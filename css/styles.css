@@ -25,7 +25,7 @@ button:hover {
 input, select {
     border-radius: 0;
     border-width: 0;
-    background-color: #F5EFE6;
+    background-color: #ebf0f3;
     padding: 5px;
     font-family: 'Figtree', sans-serif;
 }
@@ -41,7 +41,7 @@ legend {
 }
 
 textarea {
-    background-color: #F5EFE6;
+    background-color: #ebf0f3;
     border-radius: 0;
     border-width: 0;
 }
@@ -91,21 +91,16 @@ section {
 
 footer {
     background-color: Thistle;
-    height: 4.5cm;
+    height: 3.5cm;
     text-align: center;
+    padding-top: 1cm;
 }
 
-footer > p {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2vw;
-    padding-top: 30px;
-}
-
-footer > p, i, .copyright {
+footer > .footer-greet, i, .copyright {
     color: #FFF9F9;
 }
 
-img {
+section img {
     opacity: 0.8;
 }
 
@@ -125,8 +120,22 @@ p:active, ul:active, ol:active {
     background: #F2D7D9;
 }
 
+span.comment {
+    font-style: italic;
+}
+
+summary + p {
+    font-style: italic;
+}
+
 .copyright {
     font-size: small;
+}
+
+.footer-greet {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 0.75cm;
 }
 
 .title {
@@ -146,6 +155,7 @@ p:active, ul:active, ol:active {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.2vw;
     width: 75%;
@@ -160,7 +170,8 @@ p:active, ul:active, ol:active {
     font-size: 1.25em;
     text-decoration: none;
     transition: color 0.5s;
-    margin: auto;
+    flex: 1 1 auto;
+    text-align: right;
 }
 
 .indices > a:hover {
