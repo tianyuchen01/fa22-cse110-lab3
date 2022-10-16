@@ -57,11 +57,11 @@
             </ol>
             <h3>Notes:</h3>
             <p>We have finalized the course list as follows:</p>
-                <ul>
-                    <li>The flight of Spring</li>
-                    <li>Energy magic</li>
-                    <li>The creation of the first rainbow</li>
-                </ul>
+            <ul>
+                <li>The flight of Spring</li>
+                <li>Energy magic</li>
+                <li>The creation of the first rainbow</li>
+            </ul>
             <p>
                 We discussed that the dorm rooms should be separate but close to each other
                 since we want to ensure privacy as well as let the candidates make friends
@@ -78,7 +78,7 @@
             <h2>Plan for Next Meeting</h2>
             <details>
                 <summary>Memo</summary>
-                Bring some sticky notes to the next meeting, or use magic instead.
+                <p>Bring some sticky notes to the next meeting, or use magic instead.</p>
             </details>
             <ol>
                 <li>Finalize dorm layout for the candidates</li>
@@ -90,12 +90,12 @@
             <h2>Miscellaneous</h2>
             <h3>Comments</h3>
             <p>
-                <span class="comment">Azura asked whether we can change meeting time next week. </span> 
-                <span class="response">We decided to vote on that later this week.</span>
+                <span class="comment">Azura asked whether we can change meeting time next week.</span> 
+                <span class="response"> We decided to vote on that later this week.</span>
             </p>
             <p>
-                <span class="comment">Ruby asked about ingredient purchase for the meals. </span>
-                <span class="response">We will decide that once we finalize the meal plans for the candidates 
+                <span class="comment">Ruby asked about ingredient purchase for the meals.</span>
+                <span class="response"> We will decide that once we finalize the meal plans for the candidates 
                 in the next week's meeting.</span>
             </p>
             <h3>Feedback</h3>
@@ -116,48 +116,54 @@
         <hr>
         <section id="attendance-list">
             <h2>Attendance List</h2>
-            <ul>
-                <li>The Enchantress</li>
-                <li>Ruby</li>
-                <li>Topaz</li>
-                <li>Tourmaline</li>
-                <li>Green Guardian Fairy</li>
-                <li>Azura</li>
-                <li>Indigo Guardian Fairy</li>
-                <li>Amethyst</li>
-            </ul>
+            <div id="list">
+                <div id="enchan">The Enchantress</div>
+                <div id="red">Ruby</div>
+                <div id="orange">Topaz</div>
+                <div id="yellow">Tourmaline</div>
+                <div id="green">Green Guardian Fairy</div>
+                <div id="blue">Azura</div>
+                <div id="indigo">Indigo Guardian Fairy</div>
+                <div id="purple">Amethyst</div>
+            </div>
         </section>
         <hr>
         <section id="feedback-form">
             <h2>Feedback Form</h2>
             <p>Feel free to provide your feedback!</p>
             <form id="feedback">
-                <label for="fname">First name: </label>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Last name: </label>
-                <input type="text" id="lname" name="lname"><br><br>
+                <div class="name-input">
+                    <label for="fname">First name: </label>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name: </label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                </div>
                 
-                <label for="date">Please enter today's date: </label><br>
-                <input type="date" id="date" name="date"><br><br>
+                <div class="date-input">
+                    <label for="date">Please enter today's date: </label><br>
+                    <input type="date" id="date" name="date"><br><br>
+                </div>
 
-                <label for="choose-milkshake">Choose or suggest a milkshake flavor for the next meeting: </label><br>
-                <input list="milkshake-flavors" id="choose-milkshake" name="choose-milkshake">
-                <datalist id="milkshake-flavors">
-                    <option value="Strawberry">
-                    <option value="Vanilla">
-                    <option value="Matcha">
-                    <option value="Chocolate">
-                    <option value="Milk">
-                </datalist><br><br>
+                <div class="choices">
+                    <label for="choose-milkshake">Choose or suggest a milkshake flavor for the next meeting: </label><br>
+                    <input list="milkshake-flavors" id="choose-milkshake" name="choose-milkshake">
+                    <datalist id="milkshake-flavors">
+                        <option value="Strawberry">
+                        <option value="Vanilla">
+                        <option value="Matcha">
+                        <option value="Chocolate">
+                        <option value="Milk">
+                    </datalist><br><br>
 
-                <label for="choose-fruit">Choose your favorite fruit for the next meeting: </label><br>
-                <select id="choose-fruit" name="fruit-select">
-                    <option value="">--Please choose a fruit--</option>
-                    <option value="blueberry">Blueberry</option>
-                    <option value="strawberry">Strawberry</option>
-                    <option value="apple">Apple</option>
-                    <option value="pineapple">Pineapple</option>
-                </select><br>
+                    <label for="choose-fruit">Choose your favorite fruit for the next meeting: </label><br>
+                    <select id="choose-fruit" name="fruit-select">
+                        <option value="">--Please choose a fruit--</option>
+                        <option value="blueberry">Blueberry</option>
+                        <option value="strawberry">Strawberry</option>
+                        <option value="apple">Apple</option>
+                        <option value="pineapple">Pineapple</option>
+                    </select><br>
+                </div>
 
                 <p>Which section(s) of this meeting note is <em>not</em> useful to you?</p>
                 <input type="checkbox" id="sec1" name="sec1" value="sec1">
@@ -193,7 +199,7 @@
         </section>
     </main>
     <footer>
-        <p>From the Enchantress: <i>Be happy!</i></p>
+        <div class="footer-greet">From the Enchantress: <i>Be happy!</i></div>
         <div class="copyright">&copy; Fairy Secretary</div>
     </footer>
 </body>

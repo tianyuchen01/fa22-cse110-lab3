@@ -1,5 +1,10 @@
 * {
-    color: #46434c;
+    color: #46434c;  /* define general text color */
+}
+
+/* change all img style after p */
+p ~ img {
+    border: 5px solid #ebf0f3;
 }
 
 body {
@@ -15,17 +20,17 @@ button {
     font-family: 'Figtree', sans-serif;
     font-size: 16px;
     transition: background-color 0.5s;
-    background-color: #DAEAF1;
+    background-color: #ebf0f3;
 }
 
 button:hover {
-    background-color: #C6DCE4;
+    background-color: #eedcde;
 }
 
 input, select {
     border-radius: 0;
     border-width: 0;
-    background-color: #F5EFE6;
+    background-color: #ebf0f3;
     padding: 5px;
     font-family: 'Figtree', sans-serif;
 }
@@ -41,11 +46,12 @@ legend {
 }
 
 textarea {
-    background-color: #F5EFE6;
+    background-color: #ebf0f3;
     border-radius: 0;
     border-width: 0;
 }
 
+/* making a fixed navigation bar at the top layer */
 nav {
     background-color: Thistle;
     height: 5.5vw;
@@ -74,7 +80,7 @@ h3 {
 }
 
 hr {
-    width: 5%;
+    width: 10%;
     border-style: dotted;
     border-width: 0.5rem 0 0 0;
     border-color: #F2D7D9;
@@ -91,42 +97,54 @@ section {
 
 footer {
     background-color: Thistle;
-    height: 4.5cm;
+    height: 3.5cm;
     text-align: center;
+    padding-top: 1cm;
 }
 
-footer > p {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2vw;
-    padding-top: 30px;
-}
-
-footer > p, i, .copyright {
+footer > .footer-greet, i, .copyright {
     color: #FFF9F9;
 }
 
-img {
-    opacity: 0.8;
+section img {
+    opacity: 0.75;
 }
 
 img[alt^="Azura"] {
-    width: 30%;
-}
-
-img[alt^="dorm"] {
     width: 40%;
 }
 
+img[alt^="dorm"] {
+    width: 50%;
+}
+
+/* make the main content texts more spread out */
 p, ul, ol, form {
     line-height: 2;
 }
 
+/* add background color when clicking on the main contents */
 p:active, ul:active, ol:active {
-    background: #F2D7D9;
+    background: #eedcde;
+}
+
+span.comment {
+    font-style: italic;
+}
+
+/* change the paragraph style immediately after summary */
+summary + p {
+    font-style: italic;
 }
 
 .copyright {
     font-size: small;
+}
+
+.footer-greet {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 0.75cm;
 }
 
 .title {
@@ -142,10 +160,12 @@ p:active, ul:active, ol:active {
     color: rgb(144, 94, 150);
 }
 
+/* spreading the indices in the navigation bar */
 .indices {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-evenly;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.2vw;
     width: 75%;
@@ -160,13 +180,15 @@ p:active, ul:active, ol:active {
     font-size: 1.25em;
     text-decoration: none;
     transition: color 0.5s;
-    margin: auto;
+    flex: 1 1 auto;
+    text-align: right;
 }
 
 .indices > a:hover {
     color: Seashell;
 }
 
+/* styling the back to top icon on the top-left */
 #index {
     color: #FFF9F9;
     font-size: 2.8vw;
@@ -185,6 +207,7 @@ p:active, ul:active, ol:active {
     margin-top: 0;
 }
 
+/* make changes based on screen width */
 @media (max-width: 600px) {
     .indices {
         display: none;
