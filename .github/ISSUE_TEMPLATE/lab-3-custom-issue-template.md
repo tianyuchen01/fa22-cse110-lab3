@@ -8,14 +8,10 @@ assignees: tianyuchen01
 ---
 
 ## Date and Time
-yyyy/mm/dd [time]
-
-<br>
+yyyy/mm/dd, [time]
 
 ## Description
 A paragraph for general task description.
-
-<br>
 
 ## Detailed Actions
 A list of detailed actions for completing this task:
@@ -23,12 +19,8 @@ A list of detailed actions for completing this task:
 - Action 2
 - Action 3
 
-<br>
-
 ## Unresolved
 A list of unresolved things in this task:
 - Unresolved 1
 - Unresolved 2
 - Unresolved 3
-
-<br>
