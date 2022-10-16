@@ -7,8 +7,8 @@ assignees: tianyuchen01
 
 ---
 
-## Date
-yyyy/mm/dd
+## Date and Time
+yyyy/mm/dd [time]
 
 <br>
 
@@ -26,7 +26,7 @@ A list of detailed actions for completing this task:
 <br>
 
 ## Unresolved
-A list of unresolved tasks:
+A list of unresolved things in this task:
 - Unresolved 1
 - Unresolved 2
 - Unresolved 3
