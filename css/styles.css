@@ -48,10 +48,11 @@ textarea {
 
 nav {
     background-color: Thistle;
-    height: 10%;
+    height: 5.5vw;
     min-width: 100%;
     position: fixed;
     top: 0;
+    z-index: 9999;
 }
 
 h1 {
@@ -182,4 +183,10 @@ p:active, ul:active, ol:active {
 
 #last-meeting {
     margin-top: 0;
+}
+
+@media (max-width: 600px) {
+    .indices {
+        display: none;
+    }
 }
