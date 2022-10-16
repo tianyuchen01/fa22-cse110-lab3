@@ -1,5 +1,10 @@
 * {
-    color: #46434c;
+    color: #46434c;  /* define general text color */
+}
+
+/* change all img style after p */
+p ~ img {
+    border: 5px solid #ebf0f3;
 }
 
 body {
@@ -15,11 +20,11 @@ button {
     font-family: 'Figtree', sans-serif;
     font-size: 16px;
     transition: background-color 0.5s;
-    background-color: #DAEAF1;
+    background-color: #ebf0f3;
 }
 
 button:hover {
-    background-color: #C6DCE4;
+    background-color: #eedcde;
 }
 
 input, select {
@@ -46,6 +51,7 @@ textarea {
     border-width: 0;
 }
 
+/* making a fixed navigation bar at the top layer */
 nav {
     background-color: Thistle;
     height: 5.5vw;
@@ -74,7 +80,7 @@ h3 {
 }
 
 hr {
-    width: 5%;
+    width: 10%;
     border-style: dotted;
     border-width: 0.5rem 0 0 0;
     border-color: #F2D7D9;
@@ -101,29 +107,32 @@ footer > .footer-greet, i, .copyright {
 }
 
 section img {
-    opacity: 0.8;
+    opacity: 0.75;
 }
 
 img[alt^="Azura"] {
-    width: 30%;
-}
-
-img[alt^="dorm"] {
     width: 40%;
 }
 
+img[alt^="dorm"] {
+    width: 50%;
+}
+
+/* make the main content texts more spread out */
 p, ul, ol, form {
     line-height: 2;
 }
 
+/* add background color when clicking on the main contents */
 p:active, ul:active, ol:active {
-    background: #F2D7D9;
+    background: #eedcde;
 }
 
 span.comment {
     font-style: italic;
 }
 
+/* change the paragraph style immediately after summary */
 summary + p {
     font-style: italic;
 }
@@ -151,6 +160,7 @@ summary + p {
     color: rgb(144, 94, 150);
 }
 
+/* spreading the indices in the navigation bar */
 .indices {
     display: flex;
     flex-direction: row;
@@ -178,6 +188,7 @@ summary + p {
     color: Seashell;
 }
 
+/* styling the back to top icon on the top-left */
 #index {
     color: #FFF9F9;
     font-size: 2.8vw;
@@ -196,6 +207,7 @@ summary + p {
     margin-top: 0;
 }
 
+/* make changes based on screen width */
 @media (max-width: 600px) {
     .indices {
         display: none;
