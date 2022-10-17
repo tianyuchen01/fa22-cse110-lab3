@@ -111,7 +111,7 @@ section img {
 }
 
 img[alt^="Azura"] {
-    width: 40%;
+    width: 35%;
 }
 
 img[alt^="dorm"] {
@@ -205,6 +205,57 @@ summary + p {
 
 #last-meeting {
     margin-top: 0;
+}
+
+#list > div {
+    display: inline-block;
+    height: 3vw;
+    padding-top: 1vw;
+    text-align: center;
+    font-size: 1.7vw;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
+
+#list {
+    margin: 40px auto 40px auto;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    column-gap: 6.1%;
+    row-gap: 50px;
+}
+
+/* define background color of each attendant */
+#enchan {
+    background-image: linear-gradient(to right, #F2D7D9, #C6DCE4, #FAF0D7);
+}
+
+#red {
+    background-image: linear-gradient(to right, #F68787, #f1cfc3);
+}
+
+#orange {
+    background-image: linear-gradient(to right, #FFBA92, #FFE9C5);
+}
+
+#yellow {
+    background-image: linear-gradient(to right, #FFE69A, #fdf3cf);
+}
+
+#green {
+    background-image: linear-gradient(to right, #afd4b2, #ddede4);
+}
+
+#blue {
+    background-image: linear-gradient(to right, #87CEFA, #e5eef7);
+}
+
+#indigo {
+    background-image: linear-gradient(to right, #a5a5ef, #eae3ef);
+}
+
+#purple {
+    background-image: linear-gradient(to right, #d19bd1, #dfd1df);
 }
 
 /* make changes based on screen width */
